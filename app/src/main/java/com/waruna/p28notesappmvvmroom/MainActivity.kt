@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
     //1-add dependencies
     //2-add NavHostFragment(FragmentContainerView)->
     // NavGraph to activity_main.xml
-    //3-add destinations to nav_graph.xml
+    //3-add destination fragments to nav_graph.xml
     //4-add note_layout.xml
-    //5-create navigation
+    //5-create menu files
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
