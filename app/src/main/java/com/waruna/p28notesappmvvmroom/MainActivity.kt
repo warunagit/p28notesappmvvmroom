@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
     //2-add NavHostFragment(FragmentContainerView)->
     // NavGraph to activity_main.xml
     //3-add destinations to nav_graph.xml
-    //4-change FrameLayouts to ConstraintLayouts
-    //5-add FloatingActionButton to fragment_home
+    //4-add note_layout.xml
+    //5-create navigation
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
