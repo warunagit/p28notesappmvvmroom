@@ -16,7 +16,14 @@ class MainActivity : AppCompatActivity() {
     //3-add destination fragments to nav_graph.xml
     //4-add note_layout.xml
     //5-create menu files
+    //--ROOM START
     //6-create entity data class, Note
+    //7-create Data Access Object, add @DAO anotation and sql queries
+    //8-create database class: NoteDatabase, with singleton instance
+    //--ROOM Finish
+    //9-create repository
+
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
