@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     //3-add destination fragments to nav_graph.xml
     //4-add note_layout.xml
     //5-create menu files
+    //6-create entity data class, Note
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
