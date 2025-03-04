@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.waruna.p28notesappmvvmroom.viewmodel.NoteViewModel
 
 class MainActivity : AppCompatActivity() {
     // NotesApp contains all of:
@@ -27,9 +28,11 @@ class MainActivity : AppCompatActivity() {
     //12-create adapter: NoteAdapter
     //13-add navigation actions arrows with arguments
     //14-edit HomeFragment
+    //15-Staggered Grid Layout: HomeFragment code
+    //16-
 
 
-
+     lateinit var noteViewModel: NoteViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
