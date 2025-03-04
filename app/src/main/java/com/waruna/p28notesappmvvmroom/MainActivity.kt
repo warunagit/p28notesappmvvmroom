@@ -21,7 +21,12 @@ class MainActivity : AppCompatActivity() {
     //7-create Data Access Object, add @DAO anotation and sql queries
     //8-create database class: NoteDatabase, with singleton instance
     //--ROOM Finish
-    //9-create repository
+    //9-create repository class: NoteRepository
+    //10-create viewmodel: NoteViewModel, and add coroutines
+    //11-create viewmodelfactory
+    //12-create adapter: NoteAdapter
+    //13-add navigation actions arrows with arguments
+    //14-edit HomeFragment
 
 
 

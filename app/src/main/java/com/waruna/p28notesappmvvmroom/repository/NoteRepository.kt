@@ -4,7 +4,7 @@ import com.waruna.p28notesappmvvmroom.database.NoteDatabase
 import com.waruna.p28notesappmvvmroom.model.Note
 
 class NoteRepository(private val db: NoteDatabase) {
-    //functions of DOA file
+    //call to mothods of DOA
     suspend fun insertNote(note: Note) = db.getNoteDAO().insertNote(note)
     suspend fun updateNote(note: Note) = db.getNoteDAO().updateNote(note)
     suspend fun deleteNote(note: Note) = db.getNoteDAO().deleteNote(note)

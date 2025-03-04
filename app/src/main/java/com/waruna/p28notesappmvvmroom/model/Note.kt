@@ -13,4 +13,4 @@ data class Note(
     val noteTitle: String,
     val noteBody: String
 ):Parcelable
-//Parcelable - exchange data between activities
+//Parcelable - exchange data between activities.
