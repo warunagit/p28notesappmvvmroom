@@ -5,7 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
+import com.waruna.p28notesappmvvmroom.database.NoteDatabase
+import com.waruna.p28notesappmvvmroom.databinding.ActivityMainBinding
+import com.waruna.p28notesappmvvmroom.repository.NoteRepository
 import com.waruna.p28notesappmvvmroom.viewmodel.NoteViewModel
+import com.waruna.p28notesappmvvmroom.viewmodel.NoteViewmodelFactory
 
 class MainActivity : AppCompatActivity() {
     // NotesApp contains all of:
@@ -29,14 +34,28 @@ class MainActivity : AppCompatActivity() {
     //13-add navigation actions arrows with arguments
     //14-edit HomeFragment
     //15-Staggered Grid Layout: HomeFragment code
-    //16-
+    //16-Fragemnt class codes
+    //17-MainActivity codes
 
 
-     lateinit var noteViewModel: NoteViewModel
+    lateinit var binding: ActivityMainBinding
+    lateinit var noteViewModel: NoteViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setUpViewModel()
+    }
+
+    private fun setUpViewModel() {
+        val noteRepository = NoteRepository(NoteDatabase(this))
+        val viewModelProviderFactory = NoteViewmodelFactory(application,noteRepository)
+        noteViewModel = ViewModelProvider(
+            this,
+            viewModelProviderFactory
+        ).get(NoteViewModel::class.java)
     }
 }
